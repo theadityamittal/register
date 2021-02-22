@@ -1,0 +1,92 @@
+.view{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: auto;
+    padding: 2%;
+    color: #d4d4d4;
+    background: #53005355;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 0 8px 6px -6px #000000aa
+}
+
+.viewtitle{
+    width: 100%;
+    text-align: center;
+    font-size: 160%;
+    margin-bottom: 4%;
+}
+
+.viewtitle h1{
+    margin: 0;
+}
+
+.outputitem{
+    font-size: 130%;
+    width: 95%;
+    height: 30px;
+    margin: 2%;
+    padding: 0.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.outputitem .outputlabel{
+    font-weight: 900;
+}
+
+@media screen and (max-width:1300px){
+    .view{
+        width: 43%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .view{
+        width: 50%;
+    }
+
+    .viewtitle{
+        font-size: 130%;
+    }
+
+    .outputitem{
+        height: 30px;
+    }
+
+    .outputitem .outputlabel, .outputitem .outputvalue{
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width:750px){
+    .view{
+        width: 65%;
+        height: 255px;
+    }
+
+    .viewtitle{
+        margin-top: 5px;
+    }
+
+    .outputitem{
+        height: 9%;
+    }    
+}
+
+@media screen and (max-width: 600px){
+    .view{
+        width: 75%;
+    }
+
+    .viewtitle{
+        font-size: 115%;
+    }
+
+    .outputitem{
+        font-size: 120%;
+    }
+}

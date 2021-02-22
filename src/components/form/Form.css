@@ -1,0 +1,153 @@
+.form{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: auto;
+    padding: 2%;
+    color: #d4d4d4;
+    background: #53005355;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 0 8px 6px -6px #000000aa;
+    overflow: hidden;
+}
+
+.formtitle{
+    width: 100%;
+    text-align: center;
+    font-size: 160%;
+    margin-bottom: 4%;
+}
+
+.formtitle h1{
+    margin: 0;
+}
+
+.formitem{
+    width: 95%;
+    height: 30px;
+    margin: 2%;
+    padding: 0.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.formitem label{
+    font-size: 120%;
+    font-weight: 800;
+    align-self: center;
+    width: 42%;
+    min-width: 100px;
+    text-align: left;
+}
+
+.formitem input{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #330033;
+    border: solid #800080 0.05px;
+    color: #d4d4d4;
+    width: 50%;
+    transition: 0.3s;
+}
+
+.formitem input:hover{
+    background-color: #660066;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #800080;
+    opacity: 1; /* Firefox */
+  }
+
+.formitem input:hover::placeholder{
+      color: #bb00bb;
+  }
+
+.formitem input[type=submit]{
+    margin-top: 5px;
+    width: 150px;
+    height: 45px;
+    background-color: #330033;
+    color: #800080;
+    border: solid #800080;
+    cursor: pointer;
+    font-family: 'Lucida Console', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    transition: ease-in 0.25s;
+}
+
+.formitem input[type=submit]:hover{
+    transform: scale(1.1);
+    background-color: #800080;
+    color: #330033;
+    border: solid #330033;
+}
+
+@media screen and (max-width:1300px){
+    .form{
+        width: 43%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .form{
+        width: 50%;
+    }
+
+    .formtitle{
+        font-size: 140%;
+    }
+
+    .formitem{
+        height: 30px;
+    }
+
+    .formitem label{
+        font-size: 110%;
+    }
+
+    .formitem input[type=submit]{
+        margin-top: 0;
+        width: 120px;
+        height: 35px;
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width:750px){
+    .form{
+        width: 65%;
+    }
+
+    .formtitle{
+        font-size: 130%;
+    }
+
+    .formitem{
+        height: 28px;
+    }
+
+    .formitem label{
+        font-size: 100%;
+    }
+    
+    .formitem input[type=submit]{
+        margin-top: 0;
+        width: 115px;
+        height: 30px;
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .form{
+        width: 75%;
+    }
+
+    .formtitle{
+        font-size: 115%;
+    }
+}
+
